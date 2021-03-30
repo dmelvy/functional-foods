@@ -90,7 +90,7 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create seed data    |    L     |     1 hr       |      hrs     |    3 hrs    |
+| Create seed data    |    L     |     1 hr       |      hrs     |    TBD    |
 | Build BE structure  |    H     |     2 hrs      |      hrs     |     TBD     |
 | All BE API requests |    H     |     3 hrs      |      hrs     |     TBD     |
 | Routes & Controllers|    H     |     3 hrs      |      hrs     |     TBD     |
