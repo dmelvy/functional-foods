@@ -57,7 +57,7 @@ _The **Functional Food** MVP will have full CRUD functionality. Users will only 
 
 #### Wireframes
 
-![Adobe Wireframes](https://xd.adobe.com/view/b42aa3c7-71ce-4d45-a6ed-27098961ff2d-e179)
+[Adobe Wireframes](https://xd.adobe.com/view/b42aa3c7-71ce-4d45-a6ed-27098961ff2d-e179)
 
 #### Component Tree
 
