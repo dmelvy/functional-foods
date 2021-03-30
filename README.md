@@ -41,8 +41,6 @@ _The **Functional Food** MVP will have full CRUD functionality. Users will only 
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                 |
 | :--------------: | :-----------------------------------------  |
 |      React       | _For frontend development_                  |
@@ -92,9 +90,19 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Create seed data    |    L     |     1 hr       |      hrs     |    3 hrs    |
+| Build BE structure  |    H     |     2 hrs      |      hrs     |     TBD     |
+| All BE API requests |    H     |     3 hrs      |      hrs     |     TBD     |
+| Routes & Controllers|    H     |     3 hrs      |      hrs     |     TBD     |
+| Build FE structure  |    H     |     2 hrs      |      hrs     |     TBD     |
+| ALL FE API requests |    H     |     3 hrs      |      hrs     |     TBD     |
+| Verify/Auth functions|    H     |     2 hrs      |      hrs     |     TBD     |
+| Home Screen         |    H     |     3 hrs      |      hrs     |     TBD     |
+| Details Screen      |    H     |     2 hrs      |      hrs     |     TBD     |
+| Add/Edit Forms      |    H     |     2 hrs      |      hrs     |     TBD     |
+| Sign In/Register screens|    H     |     3 hrs      |      hrs     |     TBD     |
+| Basic CSS           |    H     |     4 hrs      |      hrs     |     TBD     |
+| TOTAL               |          |     31 hrs      |      hrs     |     TBD     |
 
 <br>
 
