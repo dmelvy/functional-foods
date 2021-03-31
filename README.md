@@ -117,7 +117,7 @@ src
 
 ## Post-MVP
 
-For Post-MVP, my goal is to create a more customized user experience with the ability to add a "Grocery List" section of saved or favorited items. I would also love to integrate healthy recipes based on the healthier "clean" food items.
+For Post-MVP, my goal is to create a more customized user experience with the ability to add a "Grocery List" section of saved or favorited items. I would also love to integrate a way for people to connect with local farmers / their nearest farmer's markets to support shopping for local produce.
 
 ***
 
