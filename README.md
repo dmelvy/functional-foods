@@ -19,7 +19,7 @@
 
 ## Overview
 
-_**Functional Foods** is a web app built using a RESTful JSON API, React, and Ruby Rails. Its goal is to empower users by helping them uncover perpetuated myths about what is actually good for their health by understanding how foods affect our energy and what they are actually doing to our bodies. It's a healthier and more intimate approach to food than merely counting calories.
+_**Functional Foods** is a web app built using a RESTful JSON API, React, and Ruby Rails. Its goal is to empower users by helping them rethink the way they look at food and uncover perpetuated myths about what is actually good for their health by understanding how foods affect our energy and what they are actually doing to our bodies. It's a healthier and more intimate approach to food than merely counting calories.
 
 
 <br>
