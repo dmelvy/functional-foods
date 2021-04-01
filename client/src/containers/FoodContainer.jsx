@@ -48,17 +48,12 @@ export default function FoodContainer(props) {
 
   const handleDelete = async (id) => {
     await destroyFood(id);
-    setFoods(prevState => prevState.filter(food => food.id != id))
+    setFoods(prevState => prevState.filter(food => food.id !== id))
   }
 
   return (
     <Switch>
-      <Route path='/effects'>
-        <Effects
-          effects={effects}
-        />
-      </Route>
-      {/* <Route path='/food_items/new'>
+      <Route path='/food_items/new'>
         <FoodCreate
           handleCreate={handleCreate}
         />
@@ -73,12 +68,17 @@ export default function FoodContainer(props) {
         <FoodDetail
           effects={effects}
         />
-      </Route> */}
+      </Route>
       <Route path='/food_items'>
         <FoodItems
           foods={foods}
           handleDelete={handleDelete}
           currentUser={currentUser}
+        />
+      </Route>
+      <Route path='/effects'>
+        <Effects
+          effects={effects}
         />
       </Route>
     </Switch>
