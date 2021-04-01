@@ -10,7 +10,7 @@ class FoodItemsController < ApplicationController
 
   # GET /food_items/1
   def show
-    render json: @food_item
+    render json: @food_item, include: :effects
   end
 
   # POST /food_items
