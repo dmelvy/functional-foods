@@ -8,6 +8,11 @@ a {
   color: black;
 }
 
+.header {
+  background: lightblue;
+  height: 50vh;
+}
+
 #hamnav {
   width: 20%;
   background: lightblue;
