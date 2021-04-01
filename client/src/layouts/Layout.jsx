@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Layout.css";
+import Search from '../components/Search';
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
     <div className="header">
       <header>
-        <Link to="/"><p className="logo">Functional Foods</p></Link>
+        <Link to="/food_items"><p className="logo">Functional Foods</p></Link>
+        {/* <Search /> */}
+        {/* <img className="chef" src="https://freesvg.org/img/1583930821red_head_chef.png"/> */}
         <div id="hamnav">
         <label htmlFor="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />
@@ -18,7 +21,7 @@ export default function Layout(props) {
                   <p>{currentUser.username}</p>
                   <Link to='/food_items'>Foods</Link>
                   <Link to='/effects'>Effects</Link>
-              <button onClick={handleLogout}>Logout</button>
+              <a onClick={handleLogout}>Logout</a>
             </>
                 :
             <>
@@ -27,12 +30,6 @@ export default function Layout(props) {
                   <Link to='/effects'>Effects</Link>
             </>
         }
-      {/* {currentUser && (
-        <>
-          <Link to='/food_items'>Foods</Link>
-          <Link to='/effects'>Effects</Link>
-        </>
-          )} */}
           </div>
           </div>
         </header>

@@ -3,9 +3,11 @@ import { useParams } from 'react-router-dom';
 
 export default function FoodEdit(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    name: '',
+    img_url: '',
+    score: '',
   })
-  const { name } = formData;
+  const { name, img_url, score } = formData;
   const { id } = useParams();
   const { foods, handleUpdate } = props;
 
@@ -13,7 +15,9 @@ export default function FoodEdit(props) {
     const prefillFormData = () => {
       const foodItem = foods.find(food => food.id === Number(id))
       setFormData({
-        name: foodItem.name
+        name: foodItem.name,
+        img_url: foodItem.img_url,
+        score: foodItem.score,
       })
     }
     if (foods.length) {
@@ -41,6 +45,24 @@ export default function FoodEdit(props) {
           type='text'
           name='name'
           value={name}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Photo:
+        <input
+          type='text'
+          name='img_url'
+          value={img_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Score:
+        <input
+          type='number'
+          name='score'
+          value={score}
           onChange={handleChange}
           />
       </label>

@@ -26,7 +26,10 @@ export default function FoodContainer(props) {
 
   const handleCreate = async (foodData) => {
     const newFood = await postFood(foodData);
-    setFoods(prevState => [...prevState, newFood]);
+    setFoods(prevState => ([
+      ...prevState,
+      newFood
+    ]));
     history.push('/food_items');
   } 
 

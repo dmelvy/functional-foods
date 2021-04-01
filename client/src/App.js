@@ -61,7 +61,7 @@ function App() {
               handleRegister={handleRegister}
             />
           </Route>
-          <Route path='/'>
+          <Route path='/food_items'>
             <FoodContainer
             currentUser={currentUser}
             />

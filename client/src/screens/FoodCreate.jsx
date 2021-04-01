@@ -2,9 +2,11 @@ import { useState } from 'react';
 
 export default function FoodCreate(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    name: '',
+    img_url: '',
+    score: '',
   })
-  const { name } = formData;
+  const { name, img_url, score } = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
@@ -30,7 +32,25 @@ export default function FoodCreate(props) {
           onChange={handleChange}
           />
       </label>
+      <label>
+        Photo:
+        <input
+          type='text'
+          name='img_url'
+          value={img_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Score:
+        <input
+          type='number'
+          name='score'
+          value={score}
+          onChange={handleChange}
+          />
+      </label>
       <button>Submit</button>
-    </form>
+      </form>
   )
 }

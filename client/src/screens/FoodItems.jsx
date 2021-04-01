@@ -9,19 +9,19 @@ export default function FoodItems(props) {
 
   return (
     <div className="all-foods">
-      <h3>Food Items</h3>
       {foods.map((food) => (
-        <React.Fragment key={food.id}>
+        <div className="food-item" key={food.id}>
           <Link to={`/food_items/${food.id}`}><img src={food.img_url} /><p>{food.name}</p></Link>
           {currentUser?.id === food.user_id && (
             <>
               <Link to={`/food_items/${food.id}/edit`}>
-                <button>Edit</button>
+                <button className='authchange'>Edit</button>
               </Link>
-              <button onClick={() => handleOpen(food.id)}>delete</button>
+              <button className='authchange' onClick={() => handleOpen(food.id)}>delete</button>
+              <br />
             </>
           )}
-        </React.Fragment>
+        </div>
       ))}
       <br />
       <Link to="/food_items/new">
