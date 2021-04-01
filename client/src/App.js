@@ -7,9 +7,9 @@ import './App.css';
 
 // component imports
 import Layout from './layouts/Layout';
-// import Login from './screens/Login';
+import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
-// import MainContainer from './containers/MainContainer'
+import FoodContainer from './containers/FoodContainer'
 
 // function imports
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
@@ -18,13 +18,13 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
-  // useEffect(() => {
-  //   const handleVerify = async () => {
-  //     const userData = await verifyUser();
-  //     setCurrentUser(userData);
-  //   }
-  //   handleVerify();
-  // }, [])
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      setCurrentUser(userData);
+    }
+    handleVerify();
+  }, [])
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -47,23 +47,23 @@ function App() {
   return (
     <div className="App">
       <Layout
-        currentUser={currentUser}
-        // handleLogout={handleLogout}
+        // currentUser={currentUser}
+        handleLogout={handleLogout}
       >
         <Switch>
-          {/* <Route path='/login'>
-            <Login
+          <Route path='/signin'>
+            <SignIn
               handleLogin={handleLogin}
             />
-          </Route> */}
+          </Route>
           <Route path='/register'>
             <SignUp
               handleRegister={handleRegister}
             />
           </Route>
           {/* <Route path='/'>
-            <MainContainer
-            currentUser={currentUser}
+            <FoodContainer
+            // currentUser={currentUser}
             />
           </Route> */}
         </Switch>
