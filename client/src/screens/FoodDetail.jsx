@@ -30,7 +30,7 @@ export default function FoodDetail(props) {
   return (
     <div>
       <h3>{foodItem?.name}</h3>
-      {foodItem?.effects?.map((effect) => (
+      {foodItem?.effects.map((effect) => (
         <p key={effect.id}>{effect.content}</p>
       ))}
       <form onSubmit={(e) => {

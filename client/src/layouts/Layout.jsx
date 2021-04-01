@@ -1,31 +1,42 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import "./Layout.css";
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
-    <div>
+    <div className="header">
       <header>
         <Link to="/"><h1>Functional Foods</h1></Link>
+        <div id="hamnav">
+        <label htmlFor="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <div id="hamitems">
         {
           currentUser ?
             <>
-              <p>{currentUser.username}</p>
+                  <p>{currentUser.username}</p>
+                  <Link to='/food_items'>Foods</Link>
+                  <Link to='/effects'>Effects</Link>
               <button onClick={handleLogout}>Logout</button>
             </>
-            :
-            <Link to='/signin'>Sign in/Sign up</Link>
+                :
+            <>
+                <Link to='/signin'>Sign in/Sign up</Link>
+                <Link to='/food_items'>Foods</Link>
+                  <Link to='/effects'>Effects</Link>
+            </>
         }
-      </header>
-      <hr />
-      {currentUser && (
+      {/* {currentUser && (
         <>
           <Link to='/food_items'>Foods</Link>
           <Link to='/effects'>Effects</Link>
-          <hr />
         </>
-      )}
-      {props.children}
+          )} */}
+          </div>
+          </div>
+        </header>
+        {props.children}
     </div>
   )
 }
