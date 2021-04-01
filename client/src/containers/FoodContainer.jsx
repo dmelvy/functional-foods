@@ -27,7 +27,7 @@ export default function FoodContainer(props) {
   const handleCreate = async (foodData) => {
     const newFood = await postFood(foodData);
     setFoods(prevState => [...prevState, newFood]);
-    history.push('/foods');
+    history.push('/food_items');
   } 
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function FoodContainer(props) {
     setFoods(prevState => prevState.map(food => {
       return food.id === Number(id) ? updatedFood : food
     }))
-    history.push('/foods');
+    history.push('/food_items');
   }
 
   const handleDelete = async (id) => {
@@ -53,7 +53,7 @@ export default function FoodContainer(props) {
 
   return (
     <Switch>
-      <Route path='/effects'>
+      {/* <Route path='/effects'>
         <Effects
           effects={effects}
         />
@@ -73,7 +73,7 @@ export default function FoodContainer(props) {
         <FoodDetail
           effects={effects}
         />
-      </Route>
+      </Route> */}
       <Route path='/foods'>
         <FoodItems
           foods={foods}

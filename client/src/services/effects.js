@@ -6,6 +6,6 @@ export const getAllEffects = async () => {
 }
 
 export const addEffect = async (foodId, effectId) => {
-  const resp = await api.post(`/foods/${foodId}/effects/${effectId}`);
+  const resp = await api.post(`/food_items/${foodId}/effects/${effectId}`);
   return resp.data;
 }

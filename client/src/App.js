@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <Layout
-        // currentUser={currentUser}
+        currentUser={currentUser}
         handleLogout={handleLogout}
       >
         <Switch>
@@ -61,11 +61,11 @@ function App() {
               handleRegister={handleRegister}
             />
           </Route>
-          {/* <Route path='/'>
+          <Route path='/'>
             <FoodContainer
-            // currentUser={currentUser}
+            currentUser={currentUser}
             />
-          </Route> */}
+          </Route>
         </Switch>
       </Layout>
     </div>

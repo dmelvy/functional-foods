@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
 
-export default function Foods(props) {
+export default function FoodItems(props) {
   const { foods, handleDelete, currentUser } = props;
   const [open, handleOpen] = useState(false);
 
   return (
     <div>
-      <h3>Foods</h3>
+      <h3>Food Items</h3>
       {foods.map((food) => (
         <React.Fragment key={food.id}>
           <Link to={`/foods/${food.id}`}><p>{food.name}</p></Link>
