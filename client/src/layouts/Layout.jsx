@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Layout.css";
+import Search from '../components/Search';
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
@@ -28,7 +29,7 @@ export default function Layout(props) {
             </>
         }
           </div>
-          </div>
+        </div>
         </header>
         {props.children}
     </div>

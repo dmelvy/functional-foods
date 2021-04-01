@@ -3,18 +3,28 @@
   padding: 40px;
 }
 
+/* .chef {
+  background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
+  background-size: 30vh;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: right;
+} */
+
 a {
   text-decoration: none;
   color: black;
 }
 
-/* header {
+header {
   display: flex;
   position: sticky;
   top: 0;
-  background: lightblue;
+  background: #D8E3F4;
   height: 50vh;
-} */
+} 
 
 #hamnav {
   width: 20%;
