@@ -53,28 +53,28 @@ export default function FoodContainer(props) {
 
   return (
     <Switch>
-      {/* <Route path='/effects'>
+      <Route path='/effects'>
         <Effects
           effects={effects}
         />
       </Route>
-      <Route path='/foods/new'>
+      {/* <Route path='/food_items/new'>
         <FoodCreate
           handleCreate={handleCreate}
         />
       </Route>
-      <Route path='/foods/:id/edit'>
+      <Route path='/food_items/:id/edit'>
         <FoodEdit
           foods={foods}
           handleUpdate={handleUpdate}
         />
       </Route>
-      <Route path='/foods/:id'>
+      <Route path='/food_items/:id'>
         <FoodDetail
           effects={effects}
         />
       </Route> */}
-      <Route path='/foods'>
+      <Route path='/food_items'>
         <FoodItems
           foods={foods}
           handleDelete={handleDelete}

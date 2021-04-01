@@ -20,7 +20,7 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         <>
-          <Link to='/foods'>Foods</Link>
+          <Link to='/food_items'>Foods</Link>
           <Link to='/effects'>Effects</Link>
           <hr />
         </>
