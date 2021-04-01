@@ -1,8 +1,18 @@
+.logo {
+  background: lightblue;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #hamnav {
-  width: 50%;
+  width: 20%;
   background: lightblue;
   /* Optional */
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 }

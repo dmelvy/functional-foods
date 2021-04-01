@@ -7,7 +7,7 @@ export default function Layout(props) {
   return (
     <div className="header">
       <header>
-        <Link to="/"><h1>Functional Foods</h1></Link>
+        <Link to="/"><p className="logo">Functional Foods</p></Link>
         <div id="hamnav">
         <label htmlFor="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />
