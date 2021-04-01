@@ -8,16 +8,12 @@ a {
   color: black;
 }
 
-.header {
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
   background: lightblue;
   height: 50vh;
-  display: flex;
-}
-
-.chef {
-  
-  width: 250px;
-  height: 250px;
 }
 
 #hamnav {

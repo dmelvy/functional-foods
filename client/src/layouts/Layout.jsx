@@ -9,8 +9,8 @@ export default function Layout(props) {
     <div className="header">
       <header>
         <Link to="/food_items"><p className="logo">Functional Foods</p></Link>
-        {/* <Search /> */}
-        {/* <img className="chef" src="https://freesvg.org/img/1583930821red_head_chef.png"/> */}
+        <Search />
+        <div className="chef"></div>
         <div id="hamnav">
         <label htmlFor="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />

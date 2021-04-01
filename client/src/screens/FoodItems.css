@@ -1,3 +1,15 @@
+.chef {
+  /* position: absolute; */
+  background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
+  background-size: 50vh;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  margin-left: 700px;
+  margin-top: 1px;
+}
+
 .food-title {
   padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,10 +20,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 5vh;
   justify-content: space-around;
   align-items: center;
   width: 80%;
+  padding-top: 10px;
 }
 
 .food-item {
