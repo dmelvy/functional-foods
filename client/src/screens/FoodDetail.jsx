@@ -30,6 +30,7 @@ export default function FoodDetail(props) {
   return (
     <div>
       <h3>{foodItem?.name}</h3>
+      <img src={foodItem?.img_url}/>
       {foodItem?.effects.map((effect) => (
         <p key={effect.id}>{effect.content}</p>
       ))}

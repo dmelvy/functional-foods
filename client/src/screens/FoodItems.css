@@ -1,0 +1,12 @@
+.all-foods {
+  display: flex;
+  width: 600px;
+  height: 300px;
+}
+
+.all-foods img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

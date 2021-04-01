@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
+import './FoodItems.css';
 
 export default function FoodItems(props) {
   const { foods, handleDelete, currentUser } = props;
   const [open, handleOpen] = useState(false);
 
   return (
-    <div>
+    <div className="all-foods">
       <h3>Food Items</h3>
       {foods.map((food) => (
         <React.Fragment key={food.id}>
-          <Link to={`/food_items/${food.id}`}><p>{food.name}</p></Link>
+          <Link to={`/food_items/${food.id}`}><img src={food.img_url} /><p>{food.name}</p></Link>
           {currentUser?.id === food.user_id && (
             <>
               <Link to={`/food_items/${food.id}/edit`}>
