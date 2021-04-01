@@ -3,11 +3,11 @@
   background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
   background-size: 50vh;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   display: inline-block;
   margin-left: 700px;
-  margin-top: 1px;
+  /* margin-top: 1px; */
 }
 
 .food-title {
@@ -29,7 +29,7 @@
 .food-item {
   height: 300px;
   width: 300px;
-
+  background-color: white;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 

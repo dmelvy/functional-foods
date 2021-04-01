@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Layout.css";
-import Search from '../components/Search';
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
@@ -9,8 +8,6 @@ export default function Layout(props) {
     <div className="header">
       <header>
         <Link to="/food_items"><p className="logo">Functional Foods</p></Link>
-        <Search />
-        <div className="chef"></div>
         <div id="hamnav">
         <label htmlFor="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />

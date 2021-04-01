@@ -1,5 +1,5 @@
 .logo {
-  background: lightblue;
+  background: #D8E3F4;
   padding: 40px;
 }
 
@@ -8,17 +8,17 @@ a {
   color: black;
 }
 
-header {
+/* header {
   display: flex;
   position: sticky;
   top: 0;
   background: lightblue;
   height: 50vh;
-}
+} */
 
 #hamnav {
   width: 20%;
-  background: lightblue;
+  background: #D8E3F4;
   /* Optional */
   position: fixed;
   top: 0;
@@ -46,7 +46,7 @@ header {
   #hamnav label { 
     display: inline-block; 
     color: white;
-    background: lightblue;
+    background: #D8E3F4;
     font-style: normal;
     font-size: 5em;
     padding: 10px;

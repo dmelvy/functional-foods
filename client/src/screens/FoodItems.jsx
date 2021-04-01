@@ -8,6 +8,8 @@ export default function FoodItems(props) {
   const [open, handleOpen] = useState(false);
 
   return (
+    <>
+      <div className="chef"></div>
     <div className="all-foods">
       {foods.map((food) => (
         <div className="food-item" key={food.id}>
@@ -34,6 +36,7 @@ export default function FoodItems(props) {
           handleDelete={handleDelete}
         />
       )}
-    </div>
+      </div>
+      </>
   );
 }
