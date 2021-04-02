@@ -1,7 +1,7 @@
 .search-form {
   position: fixed;
-  top: 20%;
-  left: 29%;
+  top: 30%;
+  left: 20vw;
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
