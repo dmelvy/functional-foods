@@ -3,15 +3,19 @@
   padding: 40px;
 }
 
-/* .chef {
+.headline {
+  margin-left: 85px;
+  font-size: 50px;
+}
+
+.chef {
   background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
-  background-size: 30vh;
+  background-size: 40vh;
   background-repeat: no-repeat;
-  width: 250px;
-  height: 250px;
-  display: flex;
-  justify-content: right;
-} */
+  width: 300px;
+  height: 300px;
+  margin-top: 10vh;
+}
 
 a {
   text-decoration: none;
@@ -20,6 +24,7 @@ a {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   background: #D8E3F4;
