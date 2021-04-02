@@ -1,16 +1,24 @@
 .logo {
-  background: #D8E3F4;
+  position: fixed;
+  left: 40%;
   padding: 40px;
 }
 
 .headline {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 100px;
+  left: 20%;
   font-size: 40px;
 }
 
+.subhead {
+  display: flex;
+}
+
 .chef {
+  position: absolute;
+  right: 10%;
   background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
   background-size: 40vh;
   background-repeat: no-repeat;
@@ -26,7 +34,7 @@ a {
 
 header {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   background: #D8E3F4;

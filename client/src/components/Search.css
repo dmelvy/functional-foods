@@ -1,5 +1,5 @@
 .search-form {
-  position: absolute;
+  position: fixed;
   top: 20%;
   left: 29%;
   padding-top: 50px;

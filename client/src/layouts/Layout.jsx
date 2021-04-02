@@ -9,6 +9,7 @@ export default function Layout(props) {
       <header>
         <Link to="/food_items"><p className="logo">Functional Foods</p></Link>
         <p className="headline">Is the food you eat funky or fresh?</p>
+        <p className="subhead">Learn how different foods affect your body & start making more logical food choices.</p>
         <div className="chef"></div>
         <div id="hamnav">
         <label htmlFor="hamburger">&#9776;</label>
