@@ -9,6 +9,7 @@ import FoodItems from '../screens/FoodItems'
 import FoodCreate from '../screens/FoodCreate'
 import FoodEdit from '../screens/FoodEdit'
 import FoodDetail from '../screens/FoodDetail'
+import Search from '../components/Search';
 
 export default function FoodContainer(props) {
   const [effects, setEffects] = useState([]);
@@ -78,6 +79,10 @@ export default function FoodContainer(props) {
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
+        <Search
+          currentUser={currentUser}
+          foods={foods}
+          />
       </Route>
       <Route path='/effects'>
         <Effects
