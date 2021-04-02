@@ -32,7 +32,7 @@ export default function FoodItems(props) {
   const searchJSX = queriedFoods.map((food) => (
     <div className="food-item" key={food.id}>
       <Link to={`/food_items/${food.id}`}>
-        <p name={food.name} />
+        <p>{food.name}</p>
         <img src={food.img_url} />
       </Link>
       {currentUser?.id === food.user_id && (

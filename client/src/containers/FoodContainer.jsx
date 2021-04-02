@@ -79,10 +79,6 @@ export default function FoodContainer(props) {
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
-        <Search
-          currentUser={currentUser}
-          foods={foods}
-          />
       </Route>
       <Route path='/effects'>
         <Effects
