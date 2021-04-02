@@ -11,6 +11,7 @@ export default function Layout(props) {
       
         <Link to="/food_items"><p className="logo">Functional Foods</p></Link>
         <p className="headline">Is the food you eat funky or fresh?</p>
+        <Search />
         <div className="chef"></div>
         <div id="hamnav">
         <label htmlFor="hamburger">&#9776;</label>

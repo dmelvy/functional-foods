@@ -4,8 +4,9 @@
 }
 
 .headline {
-  margin-left: 85px;
-  font-size: 50px;
+  /* padding-left: 100px; */
+  position: absolute;
+  font-size: 40px;
 }
 
 .chef {
@@ -24,7 +25,7 @@ a {
 
 header {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: sticky;
   top: 0;
   background: #D8E3F4;
