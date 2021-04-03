@@ -8,7 +8,7 @@ class EffectsController < ApplicationController
   end
 
   def add_effect
-    @food = FoodItem.find(params[:food_id])
+    @food = FoodItem.find(params[:food_item_id])
     @effect = Effect.find(params[:id])
     @food.effects << @effect
 

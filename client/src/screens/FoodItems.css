@@ -26,8 +26,8 @@
 
 .all-foods img {
   width: 150px;
-  height: 150px;
-  object-fit: cover;
+  height: 160px;
+  object-fit: contain;
   object-position: 50% 50%;
 }
 
@@ -39,7 +39,7 @@
   .all-foods img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 50% 50%;
   }
 
