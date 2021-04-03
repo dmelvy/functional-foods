@@ -18,7 +18,7 @@ export default function Register(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className='edit-fields, form' onSubmit={(e) => {
       e.preventDefault();
       handleRegister(formData);
     }}>

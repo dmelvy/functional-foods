@@ -18,11 +18,11 @@ export default function Login(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className='edit-fields, form' onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData);
     }}>
-      <h3>Login</h3>
+      <h3>Welcome back! Sign in below.</h3>
       <label>
         Username:
         <input
