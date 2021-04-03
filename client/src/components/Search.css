@@ -16,6 +16,7 @@
   letter-spacing: 0.1px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
+  border-radius: 20px;
 }
 
 .search-input::placeholder {

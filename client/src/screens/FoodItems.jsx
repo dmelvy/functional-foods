@@ -34,14 +34,14 @@ export default function FoodItems(props) {
       <Link to={`/food_items/${food.id}`}>
         <p>{food.name}</p>
         <img src={food.img_url} />
-      </Link>
+      </Link><br/>
       {currentUser?.id === food.user_id && (
         <>
           <Link to={`/food_items/${food.id}/edit`}>
             <button className="authchange">Edit</button>
           </Link>
           <button className="authchange" onClick={() => handleOpen(food.id)}>
-            delete
+            Delete
           </button>
         </>
       )}

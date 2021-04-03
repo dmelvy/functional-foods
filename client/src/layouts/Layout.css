@@ -79,7 +79,7 @@ header {
     color: white;
     background: #D8E3F4;
     font-style: normal;
-    font-size: 5em;
+    font-size: 3em;
     padding: 10px;
   }
 
@@ -96,6 +96,15 @@ header {
   #hamnav input:checked ~ #hamitems { display: block; }
 
   @media screen and (max-width: 480px){
+    #hamnav {
+      width: 20%;
+      background: #D8E3F4;
+      /* Optional */
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
     .logo {
       position: fixed; 
       left: 25vw;
