@@ -31,7 +31,7 @@
   object-position: 50% 50%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 550px){
   .all-foods {
     margin: 0 auto;
   }

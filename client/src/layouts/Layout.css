@@ -12,7 +12,7 @@
   text-align: left;
   left: 20vw;
   top: 15%;
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .subhead {
@@ -96,7 +96,35 @@ header {
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; }
 
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 768px){
+    header {
+      height: 35vh;
+    }
+
+    .headline {
+      left: 15vw;
+    }
+
+    .subhead {
+      position: absolute;
+      margin-top: 22vh;
+      margin-left: 15vw;
+      text-align: left;
+    }
+
+    .chef {
+      right: 2vw;
+      background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
+      background-size: 25vh;
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 300px;
+      margin-top: 10vh;
+    }
+  }
+
+  @media screen and (max-width: 600px){
     #hamnav {
       width: 30%;
       background: #D8E3F4;
