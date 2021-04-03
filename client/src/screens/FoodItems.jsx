@@ -38,52 +38,27 @@ export default function FoodItems(props) {
       {currentUser?.id === food.user_id && (
         <>
           <Link to={`/food_items/${food.id}/edit`}>
-            <button className="authchange">Edit</button>
-          </Link>
-          <button className="authchange" onClick={() => handleOpen(food.id)}>
+            <button>Edit</button>
+          </Link><button onClick={()=> handleOpen(food.id)}>
             Delete
           </button>
         </>
       )}
+      
     </div>
   ));
 
   return (
     <>
-      {/* <div className="all-foods">
-        {foods.map((food) => (
-          <div className="food-item" key={food.id}>
-            <Link to={`/food_items/${food.id}`}>
-              <img src={food.img_url} />
-              <p>{food.name}</p>
-            </Link>
-            {currentUser?.id === food.user_id && (
-              <>
-                <Link to={`/food_items/${food.id}/edit`}>
-                  <button className="authchange">Edit</button>
-                </Link>
-                <button
-                  className="authchange"
-                  onClick={() => handleOpen(food.id)}
-                >
-                  delete
-                </button>
-                <br />
-              </>
-            )}
-          </div>
-        ))}
-        <br />
-        {open && (
-          <Modal
-            open={open}
-            handleOpen={handleOpen}
-            handleDelete={handleDelete}
-          />
-        )}
-      </div> */}
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <div className="all-foods">{searchJSX}</div>
+      {open && (
+        <Modal
+          open={open}
+          handleOpen={handleOpen}
+          handleDelete={handleDelete}
+        />
+      )}
     </>
   );
 }

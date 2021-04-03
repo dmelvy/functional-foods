@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './FoodEdit.css';
 
 export default function FoodEdit(props) {
   const [formData, setFormData] = useState({
@@ -34,11 +35,12 @@ export default function FoodEdit(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className='form' onSubmit={(e) => {
       e.preventDefault();
       handleUpdate(id, formData);
     }}>
-      <h3>Edit Food</h3>
+      <img src={img_url}/>
+      <div className='edit-fields'><p>Edit Food</p>
       <label>
         Name:
         <input
@@ -66,7 +68,8 @@ export default function FoodEdit(props) {
           onChange={handleChange}
           />
       </label>
-      <button>Submit</button>
+        <button>Submit</button>
+        </div>
     </form>
   )
 }

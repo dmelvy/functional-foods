@@ -54,7 +54,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
 }
 
 /* Hide Hamburger */
@@ -71,19 +70,18 @@ header {
   text-align: center;
 }
 #hamitems a:hover {
-  color: #FCF002;
+  color: black;
 }
 
 
   /* Show Hamburger Icon */
   #hamnav label { 
-    display: inline-block; 
+    display: block; 
     color: white;
     background: #D8E3F4;
     font-style: normal;
     font-size: 3em;
     padding: 10px;
-    z-index: 99999;
   }
 
   /* Break down menu items into vertical */
@@ -108,15 +106,20 @@ header {
       left: 0;
     }
 
-    #hamitems a {
+    #hamitems {
       box-sizing: border-box;
-      display: inline-block;
-      width: 100%;
+      display: block;
+      width: 200%;
+      background: #D8E3F4;
       border-top: 1px solid #333;
     }
 
+     /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+
     header {
-      height: 36vh;
+      height: 37vh;
     }
 
     .logo {
