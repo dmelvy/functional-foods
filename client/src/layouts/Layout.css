@@ -94,3 +94,40 @@ header {
   /* Toggle Show/Hide Menu */
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; }
+
+  @media screen and (max-width: 480px){
+    .logo {
+      position: fixed; 
+      left: 25vw;
+      padding: 40px;
+    }
+    
+    .headline {
+      font-family: 'Indie Flower', cursive;
+      position: relative;
+      display: flex;
+      text-align: left;
+      left: 20vw;
+      top: 25%;
+      font-size: 30px;
+    }
+    
+    .subhead {
+      font-family: 'Indie Flower', cursive;
+      position: absolute;
+      margin-top: 30vh;
+      margin-left: 20vw;
+      font-size: 12px;
+    }
+    
+    .chef {
+      /* position: absolute; */
+      right: -10vw;
+      background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
+      background-size: 20vh;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 200px;
+      margin-top: 30vh;
+    }
+  }

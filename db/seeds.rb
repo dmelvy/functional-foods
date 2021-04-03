@@ -21,11 +21,11 @@ puts "#{User.count} users created!"
 
 puts "#{Effect.count} food effects created!"
 
-@tomato = FoodItem.create!(name: 'Tomato', img_url: 'https://tinyurl.com/583mpyk', score: 3, user: @admin, effects: [@physical_energy, @inflammation])
+@tomato = FoodItem.create!(name: 'Tomato', img_url: 'https://i.imgur.com/hIJIYbE.png', score: 3, user: @admin, effects: [@physical_energy, @inflammation])
 @apple = FoodItem.create!(name: 'Apple', img_url: 'https://tinyurl.com/j5aynbpy', score: 3, user: @admin, effects: [@physical_energy])
-@avocado = FoodItem.create!(name: 'Avocado', img_url: 'https://tinyurl.com/yer28aek', score: 5, user: @admin, effects: [@physical_energy, @mental_energy])
-@garlic = FoodItem.create!(name: 'Garlic', img_url: 'https://tinyurl.com/a7yau78k', score: 2, user: @admin, effects: [@brain_fog])
-@bread = FoodItem.create!(name: 'Bread', img_url: 'https://tinyurl.com/a7e8md4e', score: 2, user: @admin, effects: [@brain_fog, @fatigue])
+@avocado = FoodItem.create!(name: 'Avocado', img_url: 'https://i.imgur.com/bLl3ot2.png', score: 5, user: @admin, effects: [@physical_energy, @mental_energy])
+@garlic = FoodItem.create!(name: 'Garlic', img_url: 'https://i.imgur.com/FoRFTxu.png', score: 2, user: @admin, effects: [@brain_fog])
+@bread = FoodItem.create!(name: 'Bread', img_url: 'https://i.imgur.com/7f2KLex.png', score: 2, user: @admin, effects: [@brain_fog, @fatigue])
 @peanuts = FoodItem.create!(name: 'Peanuts', img_url: 'https://tinyurl.com/2cmnp323', score: 1, user: @admin, effects: [@inflammation])
 
 puts "#{FoodItem.count} food items created!"
