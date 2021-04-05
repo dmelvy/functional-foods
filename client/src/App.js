@@ -9,6 +9,7 @@ import Layout from "./layouts/Layout";
 import SignIn from "./screens/SignIn";
 import SignUp from "./screens/SignUp";
 import FoodContainer from "./containers/FoodContainer";
+import Effects from './screens/Effects';
 
 // function imports
 import {
@@ -70,6 +71,11 @@ function App() {
               currentUser={currentUser}
             />
           </Route>
+          <Route path='/effects'>
+          <Effects
+            currentUser={currentUser}
+            />
+        </Route>
         </Layout>
       </Switch>
     </div>

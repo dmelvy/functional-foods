@@ -5,6 +5,7 @@
 }
 
 .all-foods {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,7 +18,7 @@
 .food-item {
   margin: 0px 25px 25px 0;
   border-radius: 15%;
-  background-color: lavender;
+  background-color: #FCCC7E;
   width: 200px;
   height: 250px;
   padding: 15px;

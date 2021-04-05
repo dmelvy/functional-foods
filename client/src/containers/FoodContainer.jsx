@@ -79,11 +79,6 @@ export default function FoodContainer(props) {
           currentUser={currentUser}
         />
       </Route>
-      <Route path='/effects'>
-        <Effects
-          effects={effects}
-        />
-      </Route>
     </Switch>
   )
 }

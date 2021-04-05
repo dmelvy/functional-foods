@@ -16,18 +16,19 @@ export default function Layout(props) {
         <input type="checkbox" id="hamburger" />
         <div id="hamitems">
         {
-          currentUser ?
+          !currentUser ?
             <>
-                  <p>{currentUser.username}</p>
+                 <Link to='/signin'>Sign in/Sign up</Link>
                   <Link to='/food_items'>Foods</Link>
-                  <Link to='/food_items/new'>Add Item</Link>
-              <a onClick={handleLogout}>Logout</a>
+                  <Link to='/effects'>About</Link>
             </>
                 :
             <>
-                <Link to='/signin'>Sign in/Sign up</Link>
-                <Link to='/food_items'>Foods</Link>
-                  <Link to='/effects'>Effects</Link>
+                <p>{currentUser.username}</p>
+                  <Link to='/food_items'>Foods</Link>
+                  <Link to='/food_items/new'>Add Item</Link>
+              <a onClick={handleLogout}>Logout</a>
+                  
             </>
         }
           </div>
