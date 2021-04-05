@@ -6,7 +6,7 @@ import Search from "../components/Search";
 import { getAllFoods } from "../services/fooditems";
 
 export default function FoodItems(props) {
-  const { foods, handleDelete, currentUser } = props;
+  const { handleDelete, currentUser } = props;
   const [open, handleOpen] = useState(false);
   const [allFoods, setAllFoods] = useState([]);
   const [queriedFoods, setQueriedFoods] = useState([]);

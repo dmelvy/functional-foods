@@ -132,7 +132,7 @@ header {
 
   @media screen and (max-width: 600px){
     #hamnav {
-      width: 30%;
+      width: 100px;
       background: #D8E3F4;
       /* Optional */
       position: fixed;
