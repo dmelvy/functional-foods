@@ -29,6 +29,8 @@ puts "#{Effect.count} food effects created!"
 @bread = FoodItem.create!(name: 'Bread', img_url: 'https://i.imgur.com/7f2KLex.png', score: 2, user: @admin, effects: [@brain_fog, @fatigue])
 @peanuts = FoodItem.create!(name: 'Peanuts', img_url: 'https://tinyurl.com/2cmnp323', score: 1, user: @admin, effects: [@inflammation])
 @blueberries = FoodItem.create!(name: 'Blueberries', img_url: 'http://assets.stickpng.com/thumbs/594578f15eb5d45f10e35b41.png', score: 4, user: @admin, effects: [@anti_inflammatory])
-@banana = FoodItem.create!(name: 'Banana', img_url: 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c132.png', user: @admin, effects: [@physical_energy])
+@banana = FoodItem.create!(name: 'Banana', img_url: 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c132.png', score: 4, user: @admin, effects: [@physical_energy])
+@eggs = FoodItem.create!(name: 'Eggs', img_url: 'https://pngimg.com/uploads/egg/egg_PNG97938.png', score: 2, user: @admin, effects: [@physical_energy, @inflammation])
+@broccoli = FoodItem.create!(name: 'Broccoli', img_url: 'https://pngimg.com/uploads/broccoli/broccoli_PNG72877.png', score: 5, user: @admin, effects: [@physical_energy, @anti_inflammatory])
 
 puts "#{FoodItem.count} food items created!"
