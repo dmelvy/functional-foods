@@ -38,7 +38,7 @@ export default function FoodCreate(props) {
           />
         </label>
         <label>
-          Add a photo (URL):
+          Photo (URL):
           <input
             type="text"
             name="img_url"

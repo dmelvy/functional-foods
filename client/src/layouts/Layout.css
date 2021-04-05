@@ -45,7 +45,6 @@ header {
   top: 0;
   background: #D8E3F4;
   height: 50vh;
-  min-width: 105vw;
 } 
 
 .user {
@@ -154,6 +153,7 @@ header {
 
     header {
       height: 37vh;
+      width: 100%;
     }
 
     .logo {
