@@ -18,6 +18,7 @@ puts "#{User.count} users created!"
 @inflammation = Effect.create!(content: 'Inflammation')
 @brain_fog = Effect.create!(content: 'Brain Fog')
 @fatigue = Effect.create!(content: 'Fatigue')
+@anti_inflammatory = Effect.create!(content: 'Anti-inflammatory')
 
 puts "#{Effect.count} food effects created!"
 
