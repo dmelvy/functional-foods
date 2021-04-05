@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-
+// importing functions
 import { getAllEffects } from '../services/effects';
 import { destroyFood, getAllFoods, postFood, putFood } from '../services/fooditems'
-
+// importing screens
 import FoodItems from '../screens/FoodItems'
 import FoodCreate from '../screens/FoodCreate'
 import FoodEdit from '../screens/FoodEdit'
