@@ -28,5 +28,7 @@ puts "#{Effect.count} food effects created!"
 @garlic = FoodItem.create!(name: 'Garlic', img_url: 'https://i.imgur.com/FoRFTxu.png', score: 2, user: @admin, effects: [@brain_fog])
 @bread = FoodItem.create!(name: 'Bread', img_url: 'https://i.imgur.com/7f2KLex.png', score: 2, user: @admin, effects: [@brain_fog, @fatigue])
 @peanuts = FoodItem.create!(name: 'Peanuts', img_url: 'https://tinyurl.com/2cmnp323', score: 1, user: @admin, effects: [@inflammation])
+@blueberries = FoodItem.create!(name: 'Blueberries', img_url: 'http://assets.stickpng.com/thumbs/594578f15eb5d45f10e35b41.png', score: 4, user: @admin, effects: [@anti_inflammatory])
+
 
 puts "#{FoodItem.count} food items created!"
