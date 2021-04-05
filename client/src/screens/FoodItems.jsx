@@ -19,7 +19,7 @@ export default function FoodItems(props) {
     };
     fetchFoods();
   }, []);
-
+// creating function to handle dynamic keyword searches
   const handleSearch = (event) => {
     const newQueriedFoods = allFoods.filter((food) =>
       food.name.toLowerCase().includes(event.target.value.toLowerCase())
@@ -28,13 +28,13 @@ export default function FoodItems(props) {
   };
 
   const handleSubmit = (event) => event.preventDefault();
-
+// putting search results in variable and including ternary for signed in users to have Edit / Delete button 
   const searchJSX = queriedFoods.map((food) => (
     <div className="food-item" key={food.id}>
       <Link to={`/food_items/${food.id}`}>
         <p>{food.name}</p>
         <img src={food.img_url} />
-      </Link><br/>
+      </Link><br />
       {currentUser?.id === food.user_id && (
         <>
           <Link to={`/food_items/${food.id}/edit`}>
