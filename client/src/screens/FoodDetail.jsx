@@ -34,8 +34,8 @@ export default function FoodDetail(props) {
         <img src={foodItem?.img_url} />
       </div>
       <div className="effects-text">
-        <p className='food-name'>{foodItem?.name}</p>
-        <p className='score'>Score: {foodItem?.score}</p>
+        <p className="food-name">{foodItem?.name}</p>
+        <p className="score">Score: {foodItem?.score}</p>
         <p className="effects-list">Effects:</p>
         {foodItem?.effects.map((effect) => (
           <p key={effect.id}>{effect.content}</p>
@@ -55,7 +55,7 @@ export default function FoodDetail(props) {
               <option value={effect.id}>{effect.content}</option>
             ))}
           </select>
-          <button>add</button>
+          <button>Add</button>
         </form>
       </div>
     </div>
