@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Layout.css";
-import Footer from './Footer';
+import Footer from "./Footer";
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
@@ -42,7 +42,7 @@ export default function Layout(props) {
         </div>
       </header>
       {props.children}
-      <Footer/>
+      <Footer />
     </div>
   );
 }

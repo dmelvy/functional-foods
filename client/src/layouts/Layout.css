@@ -2,11 +2,11 @@
   position: fixed;
   left: 40%;
   padding: 40px;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 
 .headline {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   position: relative;
   display: flex;
   text-align: left;
@@ -16,7 +16,7 @@
 }
 
 .subhead {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   position: absolute;
   margin-top: 30vh;
   margin-left: 20vw;
@@ -25,7 +25,7 @@
 .chef {
   position: absolute;
   right: 10%;
-  background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
+  background-image: url("https://freesvg.org/img/1583930821red_head_chef.png");
   background-size: 40vh;
   background-repeat: no-repeat;
   width: 300px;
@@ -43,19 +43,19 @@ header {
   flex-wrap: wrap;
   position: sticky;
   top: 0;
-  background: #D8E3F4;
+  background: #d8e3f4;
   height: 50vh;
   width: 100%;
-} 
+}
 
 .user {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-size: 1.5em;
 }
 
 #hamnav {
   width: 15%;
-  background: #D8E3F4;
+  background: #d8e3f4;
   /* Optional */
   position: fixed;
   top: 0;
@@ -63,10 +63,15 @@ header {
 }
 
 /* Hide Hamburger */
-#hamnav label, #hamburger { display: none; }
+#hamnav label,
+#hamburger {
+  display: none;
+}
 
 /* Horizontal Menu Items */
-#hamitems { display: flex; }
+#hamitems {
+  display: flex;
+}
 #hamitems a {
   width: 20%; /* 100% / 5 tabs = 20% */
   padding: 10px;
@@ -79,112 +84,118 @@ header {
   color: black;
 }
 
+/* Show Hamburger Icon */
+#hamnav label {
+  display: block;
+  color: white;
+  background: #d8e3f4;
+  font-style: normal;
+  font-size: 3em;
+  padding: 10px;
+}
 
-  /* Show Hamburger Icon */
-  #hamnav label { 
-    display: block; 
-    color: white;
-    background: #D8E3F4;
-    font-style: normal;
-    font-size: 3em;
-    padding: 10px;
+/* Break down menu items into vertical */
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems {
+  display: none;
+}
+#hamnav input:checked ~ #hamitems {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 35vh;
   }
 
-  /* Break down menu items into vertical */
-  #hamitems a {
+  .headline {
+    left: 15vw;
+  }
+
+  .subhead {
+    position: absolute;
+    margin-top: 22vh;
+    margin-left: 15vw;
+    text-align: left;
+  }
+
+  .chef {
+    right: 2vw;
+    background-image: url("https://freesvg.org/img/1583930821red_head_chef.png");
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hamnav {
+    width: 100px;
+    background: #d8e3f4;
+    /* Optional */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #hamitems {
     box-sizing: border-box;
     display: block;
-    width: 100%;
+    width: 200%;
+    background: #d8e3f4;
     border-top: 1px solid #333;
   }
 
   /* Toggle Show/Hide Menu */
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
-
-
-  @media screen and (max-width: 768px){
-    header {
-      height: 35vh;
-    }
-
-    .headline {
-      left: 15vw;
-    }
-
-    .subhead {
-      position: absolute;
-      margin-top: 22vh;
-      margin-left: 15vw;
-      text-align: left;
-    }
-
-    .chef {
-      right: 2vw;
-      background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
-      background-size: 25vh;
-      background-repeat: no-repeat;
-      width: 300px;
-      height: 300px;
-      margin-top: 10vh;
-    }
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
   }
 
-  @media screen and (max-width: 600px){
-    #hamnav {
-      width: 100px;
-      background: #D8E3F4;
-      /* Optional */
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
-
-    #hamitems {
-      box-sizing: border-box;
-      display: block;
-      width: 200%;
-      background: #D8E3F4;
-      border-top: 1px solid #333;
-    }
-
-     /* Toggle Show/Hide Menu */
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
-
-    header {
-      height: 37vh;
-      width: 100%;
-    }
-
-    .logo {
-      position: fixed; 
-      left: 25vw;
-      padding: 40px;
-    }
-    
-    .headline {
-      font-family: 'Indie Flower', cursive;
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: left;
-      left: 10vw;
-      top: 8vh;
-      font-size: 30px;
-    }
-    
-    .subhead {
-      display: none;
-    }
-    
-    .chef {
-      right: -10vw;
-      background-image: url('https://freesvg.org/img/1583930821red_head_chef.png');
-      background-size: 20vh;
-      background-repeat: no-repeat;
-      width: 200px;
-      height: 200px;
-      margin-top: 16vh;
-    }
+  header {
+    height: 37vh;
+    width: 100%;
   }
+
+  .logo {
+    position: fixed;
+    left: 25vw;
+    padding: 40px;
+  }
+
+  .headline {
+    font-family: "Indie Flower", cursive;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    left: 10vw;
+    top: 8vh;
+    font-size: 30px;
+  }
+
+  .subhead {
+    display: none;
+  }
+
+  .chef {
+    right: -10vw;
+    background-image: url("https://freesvg.org/img/1583930821red_head_chef.png");
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin-top: 16vh;
+  }
+}
