@@ -40,7 +40,7 @@ export default function FoodEdit(props) {
       e.preventDefault();
       handleUpdate(id, formData);
     }}>
-      <img src={img_url}/>
+      <img src={img_url} alt="Item of food"/>
       <div className='edit-fields'>
         <p>Edit Food</p>
       <label>

@@ -35,7 +35,7 @@ export default function Layout(props) {
                 <p className="user">{currentUser.username}</p>
                 <Link to="/food_items">Foods</Link>
                 <Link to="/food_items/new">Add Item</Link>
-                <a onClick={handleLogout}>Logout</a>
+                <a href onClick={handleLogout}>Logout</a>
               </>
             )}
           </div>

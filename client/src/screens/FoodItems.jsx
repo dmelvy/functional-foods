@@ -33,7 +33,7 @@ export default function FoodItems(props) {
     <div className="food-item" key={food.id}>
       <Link to={`/food_items/${food.id}`}>
         <p>{food.name}</p>
-        <img src={food.img_url} />
+        <img src={food.img_url} alt="Item of food"/>
       </Link><br />
       {currentUser?.id === food.user_id && (
         <>

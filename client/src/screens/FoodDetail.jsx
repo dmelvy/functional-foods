@@ -31,7 +31,7 @@ export default function FoodDetail(props) {
   return (
     <div className="food-effects">
       <div className="food-detail">
-        <img src={foodItem?.img_url} />
+        <img src={foodItem?.img_url} alt="Item of food"/>
       </div>
       <div className="effects-text">
         <p className="food-name">{foodItem?.name}</p>
