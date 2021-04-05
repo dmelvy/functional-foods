@@ -21,7 +21,8 @@ export default function Footer() {
       Get more people food woke!
       <EmailShareButton
         subject={'Functional Foods'}
-        body={''}
+        body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice.`}
+        url={''}
         separator={' '}
         className={'socialMediaButton'}
       >
