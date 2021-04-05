@@ -32,5 +32,6 @@ puts "#{Effect.count} food effects created!"
 @banana = FoodItem.create!(name: 'Banana', img_url: 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c132.png', score: 4, user: @admin, effects: [@physical_energy])
 @eggs = FoodItem.create!(name: 'Eggs', img_url: 'https://pngimg.com/uploads/egg/egg_PNG97938.png', score: 2, user: @admin, effects: [@physical_energy, @inflammation])
 @broccoli = FoodItem.create!(name: 'Broccoli', img_url: 'https://pngimg.com/uploads/broccoli/broccoli_PNG72877.png', score: 5, user: @admin, effects: [@physical_energy, @anti_inflammatory])
+@ginger = FoodItem.create!(name: 'Ginger', img_url: 'http://assets.stickpng.com/images/5b4eed0cc051e602a568ce0c.png', score: 5, user: @admin, effects: [@anti-inflammatory, @mental_energy])
 
 puts "#{FoodItem.count} food items created!"
