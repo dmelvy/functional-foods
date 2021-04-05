@@ -1,12 +1,7 @@
-h3 {
-  text-align: center;
-}
-
 .food-name {
   font-size: 30px;
   font-weight: 600;
 }
-
 
 .food-effects {
   display: flex;
@@ -18,11 +13,12 @@ h3 {
 
 .food-detail {
   border-radius: 15%;
-  background-color: #FCCC7E;
+  background-color: #fccc7e;
   width: 250px;
   height: 250px;
   padding: 15px;
-  box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.14), 0 5px 5px 5px rgba(0, 0, 0, 0.12), 0 1px 1px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.14),
+    0 5px 5px 5px rgba(0, 0, 0, 0.12), 0 1px 1px -5px rgba(0, 0, 0, 0.2);
 }
 
 .effects-text {
@@ -38,23 +34,21 @@ img {
   object-position: 50% 50%;
 }
 
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 480px) {
   .food-detail {
     width: 200px;
     height: 180px;
-}
+  }
 
   img {
     width: 150px;
     height: 150px;
     object-fit: contain;
     object-position: 50% 50%;
-  } 
+  }
 
   .effects-text {
     text-align: center;
     font-size: 20px;
   }
-
 }
