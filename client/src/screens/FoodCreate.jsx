@@ -29,10 +29,16 @@ export default function FoodCreate(props) {
         <p>Add a food item!</p>
         <label>
           Name:
-          <input type="text" name="name" value={name} onChange={handleChange} />
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleChange}
+            required
+          />
         </label>
         <label>
-          Photo:
+          Add a photo (URL):
           <input
             type="text"
             name="img_url"
@@ -45,7 +51,7 @@ export default function FoodCreate(props) {
           <input
             type="number"
             name="score"
-            max='5'
+            max="5"
             value={score}
             onChange={handleChange}
           />
