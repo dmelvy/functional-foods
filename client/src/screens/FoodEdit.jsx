@@ -14,6 +14,7 @@ export default function FoodEdit(props) {
 
   useEffect(() => {
     const prefillFormData = () => {
+      // using Number here since the id from the URL params will return a string and the id in the database is an integer
       const foodItem = foods.find(food => food.id === Number(id))
       setFormData({
         name: foodItem.name,
@@ -40,7 +41,8 @@ export default function FoodEdit(props) {
       handleUpdate(id, formData);
     }}>
       <img src={img_url}/>
-      <div className='edit-fields'><p>Edit Food</p>
+      <div className='edit-fields'>
+        <p>Edit Food</p>
       <label>
         Name:
         <input
