@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const baseURL = process.env.NODE_ENV === 'production' ? 'DEPLOY LINK HERE' : 'http://localhost:3000/'
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://functionalfoods-api.herokuapp.com/' : 'http://localhost:3000' 
 
 const api = axios.create({
-  baseURL: baseURL
-});
+  baseURL: baseUrl
+})
 
 export default api;
