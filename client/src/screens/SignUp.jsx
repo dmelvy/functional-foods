@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Register(props) {
+  const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    password: ''
+    password: '',
+    password_confirmation: ''
   })
-  const { username, email, password } = formData;
+  const { username, email, password, password_confirmation } = formData;
   const { handleRegister } = props;
 
   const handleChange = (e) => {
@@ -16,6 +18,17 @@ export default function Register(props) {
       [name]: value
     }))
   }
+
+  useEffect(() => {
+    if (password === "" || password_confirmation === ""){
+      setMessage(" ");
+    } else if (password !== password_confirmation) {
+      setMessage("Passwords don't match!")
+    } else if (password === password_confirmation) {
+      setMessage("Passwords match!")
+    } 
+
+  }, [password, password_confirmation])
 
   return (
     <form className='edit-fields, form' onSubmit={(e) => {
@@ -52,6 +65,17 @@ export default function Register(props) {
           onChange={handleChange}
         />
       </label>
+      <br/>
+      <label>
+        Confirm Password:
+        <input
+          type='password'
+          name='password_confirmation'
+          value={password_confirmation}
+          onChange={handleChange}
+        />
+      </label><br/>
+      {message}<br/>
       <button>Submit</button>
     </form>
   )

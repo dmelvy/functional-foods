@@ -48,6 +48,11 @@ header {
   min-width: 105vw;
 } 
 
+.user {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
+}
+
 #hamnav {
   width: 15%;
   background: #D8E3F4;

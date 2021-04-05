@@ -4,7 +4,6 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { getAllEffects } from '../services/effects';
 import { destroyFood, getAllFoods, postFood, putFood } from '../services/fooditems'
 
-import Effects from '../screens/Effects'
 import FoodItems from '../screens/FoodItems'
 import FoodCreate from '../screens/FoodCreate'
 import FoodEdit from '../screens/FoodEdit'
