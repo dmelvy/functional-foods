@@ -15,7 +15,7 @@ export default function Effects() {
 
   return (
     <div className='about'>
-      <p className='title'>Did you know?</p>
+      <p className='title'>Here's some food for thought...</p>
       <p className='intro'>
         If you've ever experienced a food coma, you probably concluded that certain types of food have an effect on your body and its functions. Here are a few of the good and bad ways that certain food items can change your physical state.
       </p>
@@ -26,6 +26,9 @@ export default function Effects() {
           <p key={effect.id}>{effect.content}</p>
         ))
       }
+    
+      Want to see which specific foods cause these effects? Open up that hamburger menu and go to Foods to get started!
+      
     </div>
   )
 }
