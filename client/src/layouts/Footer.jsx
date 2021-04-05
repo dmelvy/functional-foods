@@ -19,7 +19,7 @@ export default function Footer() {
       <span classsName="woke">Get more people food woke!</span>
       <EmailShareButton
         subject={`Let's make smarter lunch choices!`}
-        body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice. Go here:`}
+        body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice. Go here to check it out:`}
         url={"functional-foods.netlify.app"}
         separator={" "}
         className={"socialMediaButton"}
