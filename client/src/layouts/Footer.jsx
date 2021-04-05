@@ -22,31 +22,31 @@ export default function Footer() {
       <EmailShareButton
         subject={'Functional Foods'}
         body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice.`}
-        url={''}
+        url={'functional-foods.netlify.app'}
         separator={' '}
         className={'socialMediaButton'}
       >
         <EmailIcon size={36} />
         </EmailShareButton>
       <FacebookShareButton
-     url={"http://www.camperstribe.com"}
-     quote={"CampersTribe - World is yours to explore"}
-     hashtag="#camperstribe"
+     url={"functional-foods.netlify.app"}
+     quote={"The #1 Food For Thought App"}
+     hashtag="#GoodFood"
      className={'socialMediaButton'}
    >
      <FacebookIcon size={36} />
    </FacebookShareButton>
    <TwitterShareButton
-     url={"http://www.camperstribe.com"}
-     title={"CampersTribe - World is yours to explore"}
-     hashtag="#camperstribe"
+     url={"functional-foods.netlify.app"}
+     title={"The #1 Food For Thought App"}
+     hashtag="#GoodFood"
      className={'socialMediaButton'}
    >
      <TwitterIcon size={36} />
    </TwitterShareButton>
    <WhatsappShareButton
-     url={"http://www.camperstribe.com"}
-     title={"CampersTribe - World is yours to explore"}
+     url={"functional-foods.netlify.app"}
+     title={"The #1 Food For Thought App"}
      separator=":: "
      className={'socialMediaButton'}
    >
