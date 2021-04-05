@@ -20,8 +20,8 @@ export default function Footer() {
     <div>
       Get more people food woke!
       <EmailShareButton
-        subject={'Functional Foods'}
-        body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice.`}
+        subject={`Let's make smarter lunch choices!`}
+        body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice. Go here:`}
         url={'functional-foods.netlify.app'}
         separator={' '}
         className={'socialMediaButton'}
@@ -30,7 +30,7 @@ export default function Footer() {
         </EmailShareButton>
       <FacebookShareButton
      url={"functional-foods.netlify.app"}
-     quote={"The #1 Food For Thought App"}
+     quote={"Hey everyone, check out this awesome food app! You'll never look at lunch the same again."}
      hashtag="#GoodFood"
      className={'socialMediaButton'}
    >
@@ -38,7 +38,7 @@ export default function Footer() {
    </FacebookShareButton>
    <TwitterShareButton
      url={"functional-foods.netlify.app"}
-     title={"The #1 Food For Thought App"}
+     title={"Hey friends, check out this awesome food app! You'll never look at lunch the same again."}
      hashtag="#GoodFood"
      className={'socialMediaButton'}
    >
@@ -46,7 +46,7 @@ export default function Footer() {
    </TwitterShareButton>
    <WhatsappShareButton
      url={"functional-foods.netlify.app"}
-     title={"The #1 Food For Thought App"}
+     title={"Hey, check out this awesome food app! You'll never look at lunch the same again."}
      separator=":: "
      className={'socialMediaButton'}
    >

@@ -49,7 +49,7 @@ export default function FoodDetail(props) {
         >
           <select onChange={handleChange} defaultValue="default">
             <option value="default" disabled>
-              ---Select an effect---
+              ---Add an effect---
             </option>
             {effects.map((effect) => (
               <option value={effect.id}>{effect.content}</option>

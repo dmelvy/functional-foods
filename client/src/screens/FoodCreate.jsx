@@ -26,7 +26,7 @@ export default function FoodCreate(props) {
       }}
     >
       <div className="edit-fields">
-        <p>Create Food</p>
+        <p>Add a food item!</p>
         <label>
           Name:
           <input type="text" name="name" value={name} onChange={handleChange} />
@@ -45,6 +45,7 @@ export default function FoodCreate(props) {
           <input
             type="number"
             name="score"
+            max='5'
             value={score}
             onChange={handleChange}
           />
