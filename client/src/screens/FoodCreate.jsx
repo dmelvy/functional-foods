@@ -19,7 +19,7 @@ export default function FoodCreate(props) {
 
   return (
     <form
-      className="form"
+      className="add, form"
       onSubmit={(e) => {
         e.preventDefault();
         handleCreate(formData);

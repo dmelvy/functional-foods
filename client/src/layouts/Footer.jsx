@@ -18,7 +18,7 @@ import {
 export default function Footer() {
   return (
     <div>
-      Get more people food woke!
+      <span classsName='woke'>Get more people food woke!</span>
       <EmailShareButton
         subject={`Let's make smarter lunch choices!`}
         body={`Hey, have you heard about this amazing new food app? I bet it'll change your next lunch choice. Go here:`}
