@@ -70,6 +70,7 @@ _The **Functional Food** MVP will have full CRUD functionality. Users will only 
 src
 |__ components/
       |__ Modal.jsx
+      |__ Search.jsx
 |__ containers/
       |__ FoodContainer.jsx
 |__ screens/
@@ -79,9 +80,10 @@ src
       |__ FoodCreate.jsx
       |__ FoodEdit.jsx
       |__ SignIn.jsx
-      |__ SignOut.jsx
+      |__ SignUp.jsx
 |__ layouts/
       |__ Layout.jsx
+      |__ Footer.jsx
 |__ services/
 
 ```
@@ -118,14 +120,28 @@ src
 
 ## Post-MVP
 
-For Post-MVP, my goal is to create a more customized user experience with the ability to add a "Grocery List" section of saved or favorited items. I would also love to integrate a way for people to connect with local farmers / their nearest farmer's markets to support shopping for local produce.
+For Post-MVP, my goal is to create recipe recommendations based on the effects of different food items, e.g. Recipes to give you a mental power boost, recipes for physical energy, or just recipes for a rejuvenating day off.
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+The below piece of code was quite complex to put together as it does a few things at once for efficiency. It takes the result of a previous filter function (saved in state), maps them out with links to each food item, but also only displays the edit/delete buttons for those items created by the signed in user. After trialing different ways to incorporate these elements together, I was surprised that it took no more than 15 lines.
 
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution.
+```
+const searchJSX = queriedFoods.map((food) => (
+    <div className="food-item" key={food.id}>
+      <Link to={`/food_items/${food.id}`}>
+        <p>{food.name}</p>
+        <img src={food.img_url} alt="Item of food"/>
+      </Link><br />
+      {currentUser?.id === food.user_id && (
+        <>
+          <Link to={`/food_items/${food.id}/edit`}>
+            <button>Edit</button>
+          </Link><button onClick={()=> handleOpen(food.id)}>
+            Delete
+          </button>
+        </>
+      )}
+      ```
