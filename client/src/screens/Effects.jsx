@@ -26,8 +26,7 @@ export default function Effects() {
       {effects?.map((effect) => (
         <p key={effect.id}>{effect.content}</p>
       ))}
-      Want to see which specific foods cause these effects? Open up that
-      hamburger menu and go to Foods to get started!
+      <p className="intro">But knowing this, we can choose our meals based on our plans for our day! </p>
     </div>
   );
 }

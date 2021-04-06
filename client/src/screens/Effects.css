@@ -1,5 +1,5 @@
 .about {
-  border-radius: 15%;
+  border-radius: 15px;
   background-color: #FCCC7E;
   padding: 15px;
   box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.14), 0 5px 5px 5px rgba(0, 0, 0, 0.12), 0 1px 1px -5px rgba(0, 0, 0, 0.2);
@@ -9,14 +9,15 @@
 }
 
 .title {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .intro {
   display: flex;
   flex-wrap: wrap;
+  font-size: 14px;
 }
 
 .body {
-  font-size: 25px;
+  font-size: 20px;
 }
