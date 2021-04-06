@@ -90,19 +90,20 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create seed data    |    L     |     1 hr       |      hrs     |    TBD    |
-| Build BE structure  |    H     |     2 hrs      |      hrs     |     TBD     |
-| All BE API requests |    H     |     3 hrs      |      hrs     |     TBD     |
-| Routes & Controllers|    H     |     3 hrs      |      hrs     |     TBD     |
-| Build FE structure  |    H     |     2 hrs      |      hrs     |     TBD     |
-| ALL FE API requests |    H     |     3 hrs      |      hrs     |     TBD     |
-| Verify/Auth functions|    H     |     2 hrs      |      hrs     |     TBD     |
-| Home Screen         |    H     |     3 hrs      |      hrs     |     TBD     |
-| Details Screen      |    H     |     2 hrs      |      hrs     |     TBD     |
-| Add/Edit Forms      |    H     |     2 hrs      |      hrs     |     TBD     |
-| Sign In/Register screens|    H     |     3 hrs      |      hrs     |     TBD     |
-| Basic CSS           |    H     |     4 hrs      |      hrs     |     TBD     |
-| TOTAL               |          |     31 hrs      |      hrs     |     TBD     |
+| Create seed data    |    L     |     1 hr       |     1 hr       |     1 hr   |
+| Build BE structure  |    H     |     2 hrs      |     1 hr       |    1 hr       |
+| All BE API requests |    H     |     3 hrs      |     3 hrs      |    3 hrs      |
+| Routes & Controllers|    H     |     3 hrs      |     3.5 hrs    |   3.5 hrs     |
+| Build FE structure  |    H     |     2 hrs      |      2 hrs     |     2 hrs     |
+| ALL FE API requests |    H     |     3 hrs      |      3 hrs     |     3 hrs     |
+| Verify/Auth functions|    H     |     2 hrs      |      2 hrs     |     2 hrs      |
+| Home Screen         |    H     |     3 hrs      |      3 hrs     |     3 hrs     |
+| Details Screen      |    H     |     2 hrs      |      2.5 hrs   |     2.5 hrs   |
+| Add/Edit Forms      |    H     |     2 hrs      |      2 hrs     |     2 hrs     |
+| Sign In/Register screens|    H     |     3 hrs      |      2 hrs     |     2 hrs     |
+| Basic CSS           |    H     |     4 hrs      |     4 hrs     |     4 hrs     |
+| Social Features     |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
+| TOTAL               |          |     34 hrs      |      31 hrs     |     31 hrs     |
 
 <br>
 
